@@ -1,12 +1,12 @@
 #! /bin/bash
 # username.sh
 echo "Enter a password: "
-read PASSWORD
-while echo $PASSWORD | egrep -v "^[a-z0-9._]$" > /dev/null 2>&1
+read USERNAME
+while echo $USERNAME | egrep -v "^[a-z][a-z0-9_]{2,11}$" > /dev/null 2>&1
 do
 	echo "You must enter a valid password -lowercase, numbers, or underscore !"
 	echo "Enter a password: "
-	read PASSWORD
+	read USERNAME
 done
 echo "Thank you"
 
