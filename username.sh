@@ -1,3 +1,4 @@
+# Nikki Trippler
 #! /bin/bash
 # username.sh
 echo "Enter a password: "
